@@ -671,6 +671,90 @@ footer {
     height: 28px;
   }
 }
+  
+/* BANNER KUMPULAN VIDEO */
+.collection-banner {
+  margin: 22px 0 25px;
+}
+
+.collection-banner a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 145px;
+  padding: 25px 55px 25px 25px;
+  border: 2px solid rgba(56,189,248,.65);
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(91,45,190,.48),
+      rgba(20,105,160,.42)
+    ),
+    #10182c;
+
+  box-shadow:
+    0 8px 30px rgba(56,189,248,.10);
+
+  transition: transform .2s ease;
+}
+
+.collection-banner a:hover {
+  transform: translateY(-2px);
+}
+
+.collection-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 9px;
+}
+
+.collection-banner-content strong {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.collection-banner-content span {
+  font-size: 17px;
+  color: #c5c9dc;
+}
+
+.collection-banner-arrow {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #fff;
+}
+
+@media(max-width:700px) {
+  .collection-banner a {
+    min-height: 125px;
+    border-radius: 25px;
+    padding: 20px 45px 20px 15px;
+  }
+
+  .collection-banner-content strong {
+    font-size: 21px;
+  }
+
+  .collection-banner-content span {
+    font-size: 14px;
+  }
+
+  .collection-banner-arrow {
+    right: 15px;
+    font-size: 27px;
+  }
+}
+
 </style>
 </head>
 
@@ -832,18 +916,26 @@ footer {
 
   </section>
 
-<!-- KUMPULAN VIDEO -->
-<section class="simple-collection">
+<!-- BANNER KUMPULAN VIDEO -->
+<section class="collection-banner">
 
   <a
     href="https://www.profitableratecpmnetwork.com/dzth71h9?key=0d1e630d97de4d34d79e6dd18d6a2fe8"
     target="_blank"
     rel="noopener noreferrer">
 
-    <strong>Kumpulan Video</strong>
-    <span>Tekan untuk melihat video lain ↗</span>
+    <div class="collection-banner-content">
+      <strong>✨ Kumpulan Video</strong>
+      <span>Tekan untuk melihat video lain</span>
+    </div>
+
+    <div class="collection-banner-arrow">
+      ↗
+    </div>
 
   </a>
+
+</section>
 
 </section>
 
